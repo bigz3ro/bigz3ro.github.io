@@ -13,39 +13,6 @@ sudo apt-get install build-essential zlib1g-dev libpcre3 libpcre3-dev unzip
 sudo apt-get install libgd-dev
 ```
 2. Tiếp theo bạn copy đoạn script bash sau để cài đặt nginx với module pagespeed. Script này thực thi bằng quyền root
-
-Bạn có thể script bash tại ['Github'](https://github.com/bigz3ro/nginxbuild)
-Lưu ý: bash script này có cài thêm 1 số module khác bạn có thể thêm/xóa bằng cách xóa trong 
-script:
-```
-	--with-debug \
-	--with-pcre-jit \
-	--with-ipv6 \
-	--with-http_ssl_module \
-	--with-http_stub_status_module \
-	--with-http_realip_module \
-	--with-http_auth_request_module \
-	--with-http_addition_module \
-	--with-http_dav_module \
-	--with-http_flv_module \
-	--with-http_geoip_module \
-	--with-http_gunzip_module \
-	--with-http_gzip_static_module \
-	--with-http_image_filter_module \
-	--with-http_mp4_module \
-	--with-http_perl_module \
-	--with-http_random_index_module \
-	--with-http_secure_link_module \
-	--with-http_v2_module \
-	--with-http_sub_module \
-	--with-http_xslt_module \
-	--with-mail \
-	--with-mail_ssl_module \
-	--with-stream \
-	--with-stream_ssl_module \
-	--with-threads \
-	--add-module=${DIRECTORY}/headers-more-nginx-module-${HEADERS_VERSION} \
-```
 ```
 #!/bin/bash
 
@@ -133,6 +100,39 @@ echo ""
 echo "If there are no errors, the build is completed"
 echo "Use the link below to add an init file for Nginx"
 echo "https://www.nginx.com/resources/wiki/start/topics/examples/initscripts/"
+```
+Bạn có thể script bash tại [Github](https://github.com/bigz3ro/nginxbuild)
+
+*asterisks*Lưu ý: bash script này có cài thêm 1 số module khác bạn có thể thêm/xóa bằng cách xóa trong 
+script:
+```
+	--with-debug \
+	--with-pcre-jit \
+	--with-ipv6 \
+	--with-http_ssl_module \
+	--with-http_stub_status_module \
+	--with-http_realip_module \
+	--with-http_auth_request_module \
+	--with-http_addition_module \
+	--with-http_dav_module \
+	--with-http_flv_module \
+	--with-http_geoip_module \
+	--with-http_gunzip_module \
+	--with-http_gzip_static_module \
+	--with-http_image_filter_module \
+	--with-http_mp4_module \
+	--with-http_perl_module \
+	--with-http_random_index_module \
+	--with-http_secure_link_module \
+	--with-http_v2_module \
+	--with-http_sub_module \
+	--with-http_xslt_module \
+	--with-mail \
+	--with-mail_ssl_module \
+	--with-stream \
+	--with-stream_ssl_module \
+	--with-threads \
+	--add-module=${DIRECTORY}/headers-more-nginx-module-${HEADERS_VERSION} \
 ```
 [Here link config](https://loganmarchione.com/2016/09/nginx-pagespeed-module "Config module pagespeed for nginx")
 
