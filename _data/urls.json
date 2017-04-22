@@ -11,24 +11,20 @@
     "icon": "fa-comments"
   },
   {
-    "text": "Projects",
+    "text": "Share",
     "url": "/projects",
     "icon": "fa-desktop"
-  },
+  },  
   {
-    "text": "Resume",
-    "url": "/#",
-    "icon": "fa-graduation-cap",
+    "text": "Save",
+    "url": "/save",
+    "icon": "fa-thumbs-up",
+    layout: "post"
   },
   {
     "text": "Github",
-    "url": "/#",
+    "url": "https://github.com/bigz3ro",
     "icon": "fa-github"
   },
-  {
-    "text": "XML Feed",
-    "url": "/feed.xml",
-    "icon": "fa-feed",
-    "target": _blank
-  }
+  
 ]
