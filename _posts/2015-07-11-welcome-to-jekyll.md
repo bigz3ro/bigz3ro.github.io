@@ -6,7 +6,13 @@ categories: sever
 ---
 
 ## Hướng dẫn cài đặt và cấu hình module pagespeed cho sever nginx trên ubuntu server 16.04
-[I'm an inline-style link with title](https://loganmarchione.com/2016/09/nginx-pagespeed-module "Config module pagespeed for nginx")
+1. Đầu tiên bạn phải cài đặt các package cần thiết.
+```
+apt-get install libssl-dev
+sudo apt-get install build-essential zlib1g-dev libpcre3 libpcre3-dev unzip
+sudo apt-get install libgd-dev
+```
+[Here link config](https://loganmarchione.com/2016/09/nginx-pagespeed-module "Config module pagespeed for nginx")
 
 
 [jekyll]:      http://jekyllrb.com
