@@ -12,7 +12,8 @@ apt-get install libssl-dev
 sudo apt-get install build-essential zlib1g-dev libpcre3 libpcre3-dev unzip
 sudo apt-get install libgd-dev
 ```
-2. Tiếp theo bạn copy đoạn script bash sau để cài đặt nginx với module pagespeed. Script này thực thi bằng quyền root
+
+2. Tiếp theo bạn copy đoạn script bash sau để cài đặt nginx với module pagespeed. Script này thực thi bằng quyền root.
 ```
 #!/bin/bash
 
@@ -102,8 +103,7 @@ echo "Use the link below to add an init file for Nginx"
 echo "https://www.nginx.com/resources/wiki/start/topics/examples/initscripts/"
 ```
 Bạn có thể script bash tại [Github](https://github.com/bigz3ro/nginxbuild)
-
-*asterisks*Lưu ý: bash script này có cài thêm 1 số module khác bạn có thể thêm/xóa bằng cách xóa trong 
+Lưu ý: bash script này có cài thêm 1 số module khác bạn có thể thêm/xóa bằng cách xóa trong 
 script:
 ```
 	--with-debug \
@@ -134,6 +134,7 @@ script:
 	--with-threads \
 	--add-module=${DIRECTORY}/headers-more-nginx-module-${HEADERS_VERSION} \
 ```
+
 [Here link config](https://loganmarchione.com/2016/09/nginx-pagespeed-module "Config module pagespeed for nginx")
 
 
