@@ -17,9 +17,9 @@
   },  
   {
     "text": "Save",
-    "url": "/save",
+    "url": "/save/",
     "icon": "fa-thumbs-up",
-    layout: "post"
+    "layout": "post"
   },
   {
     "text": "Github",
