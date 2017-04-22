@@ -1,14 +1,14 @@
-title: John Smith
-description: My Personal Blog
-author: John Smith
+title: Bigzero
+description: Blog
+author: Chí ND
 logo: /static/img/avatar.png
-github: https://github.com/ashutosh2k12
-about: Freelance developer
+github: https://github.com/bigz3ro
+about: Web developer
 
 baseurl: ""
-url: "https://codeasashu.github.io/hcz-jekyll-blog"
+url: "bigz3ro.github.io"
 
-disqus_shortname: aboutashu
+disqus_shortname: bzr
 google_analytics: UA-72862926-1
 
 share:
