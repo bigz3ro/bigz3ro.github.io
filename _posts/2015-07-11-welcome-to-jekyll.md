@@ -135,20 +135,20 @@ script:
      --add-module=${DIRECTORY}/headers-more-nginx-module-${HEADERS_VERSION} \
 ```
 3. Sau khi cài đặt đã hoàn tất. Bạn sẽ active module pagespeed.
-Trong block file config.nginx thêm dòng sau :
+Trong block sever trong file config.nginx thêm dòng sau:
 ```
-pagespeed on;
+     pagespeed on;
 
-# Needs to exist and be writable by nginx.  Use tmpfs for best performance.
-pagespeed FileCachePath /var/ngx_pagespeed_cache;
+     # Needs to exist and be writable by nginx.  Use tmpfs for best performance.
+     pagespeed FileCachePath /var/ngx_pagespeed_cache;
 
-# Ensure requests for pagespeed optimized resources go to the pagespeed handler
-# and no extraneous headers get set.
-location ~ "\.pagespeed\.([a-z]\.)?[a-z]{2}\.[^.]{10}\.[^.]+" {
-  add_header "" "";
-}
-location ~ "^/pagespeed_static/" { }
-location ~ "^/ngx_pagespeed_beacon$" { }
+     # Ensure requests for pagespeed optimized resources go to the pagespeed handler
+     # and no extraneous headers get set.
+     location ~ "\.pagespeed\.([a-z]\.)?[a-z]{2}\.[^.]{10}\.[^.]+" {
+       add_header "" "";
+     }
+     location ~ "^/pagespeed_static/" { }
+     location ~ "^/ngx_pagespeed_beacon$" { }
 ```
 4. Nếu muốn tùy chỉnh các features của pagespeed thì bạn đọc doc tại [Here](https://modpagespeed.com/doc/configuration)
 [Document Reference](https://loganmarchione.com/2016/09/nginx-pagespeed-module "Config module pagespeed for nginx")
