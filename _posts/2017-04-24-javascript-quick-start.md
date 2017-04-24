@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Học javascript
+title: Javascript - những điều hay ho
 date:   2017-04-24 23:36:39
 categories: javascript
 ---
@@ -36,7 +36,7 @@ Nhưng nếu bạn viết như sau thì sẽ được
 	2 .toString();
 	(2).toString();
 ```
-Object trong javascript cũng được sử dụng như Hashmaps, chúng bao gồm tên thuộc tính
+###Object trong javascript cũng được sử dụng như Hashmaps, chúng bao gồm tên thuộc tính
 được map với value
 
 Sử dụng kí hiệu {} - nó có thể tạo 1 đối tượng . Nó là đối tượng mới kế thừa từ 
@@ -47,4 +47,48 @@ Object.prototype và chưa có thuộc tính nào.
 
 	//a new object with a 'test' property with value 12
 	var bar = { test: 12 };
+```
+###Cách truy cập tới properties của object
+Có 2 cách để có thể truy cập vào property của object:
++ Sự dụng dấu chấm
++ Sử dụng ngoặc vuông
+
+```javascript
+	var foo = { name: 'kitchen'}
+	foo.name; //kitchen
+	var get = 'name';
+	foo[get];//name
+
+	foo.1234;//SyntaxError
+	foo['1234'];//works
+```
+
+### Xóa properties
+Để xóa properties của object bạn của thể sử dụng toán tử delete
+Nếu thiết lập value là null hoặc undefined thì chỉ gía trị bị remove 
+còn key vẫn tồn tại
+Example:
+
+```javascript
+var obj = {
+	bar: 1,
+	foo: 2,
+	baz: 3
+}
+obj.bar = undefined;
+obj.foo = null;
+delete obj.baz;
+
+for(var i in obj){
+	if(obj.hasOwnProperty(i)){
+		console.log(i, '', obj[i]);
+	}
+}
+```
+Output:
+
+```
+foo null
+bar undefined
+undefined
 ```
