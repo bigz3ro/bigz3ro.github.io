@@ -6,7 +6,7 @@ categories: javascript
 ---
 
 # Giới thiệu
-..* Những chia sẻ này không phải mục đích dạy bạn Javascrip . Đây chỉ là
+..* Những chia sẻ này không phải mục đích dạy bạn Javascript . Đây chỉ là
 	những nội dụng quan trọng trong javascrip mà đòi hỏi bạn phải hiểu rõ nó.
 
 ## 1. Object
