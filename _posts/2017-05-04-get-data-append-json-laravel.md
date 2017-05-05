@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Kết hợp $append và relation giữa các bảng để lấy dữ liệu trả về dạng JSON .
+title: Kết hợp $append và relation giữa các bảng .
 date:   2017-05-03 22:04
 categories: linux
 ---
 
 # Giới thiệu
+# H1 Kết hợp $append và relation giữa các bảng để lấy dữ liệu trả về dạng JSON .
 ..* Khi bạn sử dụng Laravel để xáy dựng Resful API . Thì ta sẽ có những lúc ta muốn lấy dữ liệu 
 trả về có chứa field data của 1 bảng quan hệ trong cùng Response trả về . Mình đã được gợi ý là 
 sử dụng 1 trick rất hữu ích đó là: sử dụng biến $append của Laravel kết hợp với relation tới bảng
@@ -203,4 +204,8 @@ class Lost extends Model{
 		// after save code
 	}
 }
+```
 
+Vậy là xong rồi .Bạn có thể áp dụng nó trong những trường hợp bạn cần lấy
+dữ liệu trả về dạng JSON mà chứa dữ liệu từ bảng quan hệ khác . Tuy nhiên cách này 
+chưa phải tối ưu nhất . Mình sẽ học hỏi thêm và chia sẻ cùng các bạn.
