@@ -7,8 +7,8 @@ categories: javscript
 
 # Giới thiệu
 ..* Tìm hiểu về closure trong javascript
-	Closure nó được hiểu như 1 bao đóng . Closure là gồm những scope với 1 function là đã được thực thi với các biến. Trong scope  có thể chứa nhiều function và scope khác nữa
-
+	Closure là 1 hàm nội truy cập đến các biến bên ngoài phạm vi của nó. Closure có thể được sử dụng để implement privacy và tạo ra các function factory
+	Trong đó:
 ## 1. Ví dụ
 _______________________________________________
 
