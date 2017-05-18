@@ -10,4 +10,4 @@ categories: javascript
  khóa this này:
  1. Nếu bên trong class thì nó tham chiếu đến class
  2. Bên trong đối tượng thì nó thể hiện cho đối tượng của Object
- 3. Bên trong function thì nó tham chiếu đến ngữ cảnh được định nghĩa
+ 3. Bên trong function thì nó tham chiếu đến ngữ cảnh được định nghĩ 
