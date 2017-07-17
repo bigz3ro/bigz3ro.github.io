@@ -14,7 +14,10 @@ _______________________________________________
     //enable debug laravel
     \DB::connection()->enableQueryLog();
     //cau lenh query voi laravel
-    $list = $query->where('id', '!=', $params['jobId'])->orderBy('created_at')->limit($limit)->get();
+    $list = $query->where('id', '!=', $params['jobId'])
+                  ->orderBy('created_at')
+                  ->limit($limit)
+                  ->get();
     //get query
     $queries = \DB::getQueryLog();
     //debug here
