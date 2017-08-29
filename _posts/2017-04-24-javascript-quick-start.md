@@ -39,7 +39,7 @@ Nhưng nếu bạn viết như sau thì sẽ được
 ###Object trong javascript cũng được sử dụng như Hashmaps, chúng bao gồm tên thuộc tính
 được map với value
 
-Sử dụng kí hiệu {} - nó có thể tạo 1 đối tượng . Nó là đối tượng mới kế thừa từ 
+Sử dụng kí hiệu {} - nó có thể tạo 1 đối tượng . Nó là đối tượng mới kế thừa từ
 Object.prototype và chưa có thuộc tính nào.
 
 ```javascript
@@ -65,7 +65,7 @@ Có 2 cách để có thể truy cập vào property của object:
 
 ### Xóa properties
 Để xóa properties của object bạn của thể sử dụng toán tử delete
-Nếu thiết lập value là null hoặc undefined thì chỉ gía trị bị remove 
+Nếu thiết lập value là null hoặc undefined thì chỉ gía trị bị remove
 còn key vẫn tồn tại
 Example:
 
@@ -92,3 +92,11 @@ foo null
 bar undefined
 undefined
 ```
+
+### Xóa properties
+A common use of JSON is to exchange data to/from a web server.
+
+When sending data to a web server, the data has to be a string.
+
+Convert a JavaScript object into a string with JSON.stringify().
+
