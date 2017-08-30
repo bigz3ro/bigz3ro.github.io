@@ -93,7 +93,7 @@ bar undefined
 undefined
 ```
 
-### Xóa properties
+### JSON
 A common use of JSON is to exchange data to/from a web server.
 
 When sending data to a web server, the data has to be a string.
