@@ -12,10 +12,10 @@ _______________________________________________
 Invoking 1 function là hoãn thực thi function hiện tại, truyền quyền điều khiển và các parameter đến 1 function mới.
 Ngoài ra những tham số đã được khai báo, mỗi function nhận vào 2 params: this và arguments. Tham số "this" là vô cùng quan trọng trong lập trình hướng đối tượng, và gía trị của nó được xác định bởi invocation pattern.
 Có 4 pattern invoication trong JS :
-+ Method invocation pattern .
-+ Function invocation pattern.
-+ Contructor invocation pattern.
-+ Apply invocation pattern.
+1. Method invocation pattern .
+2. Function invocation pattern.
+3. Contructor invocation pattern.
+4. Apply invocation pattern.
 - Các pattern này khác nhau mà tham số "this" được init.
 
 1.The Method Invocation Pattern
